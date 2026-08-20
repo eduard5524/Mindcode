@@ -4,10 +4,12 @@ import ReactFlow, {
   Connection,
   Controls,
   Edge as RFEdge,
+  Handle,
   MarkerType,
   MiniMap,
   Node,
   NodeChange,
+  Position,
   applyNodeChanges,
 } from "reactflow";
 import { useStore } from "../store";
@@ -47,10 +49,12 @@ function SkillNode(props: { data: SkillNodeData }) {
         skill.notes ? `\n${skill.notes}` : ""
       }`}
     >
+      <Handle type="target" position={Position.Top} />
       <div className="skill-node-label" style={{ color }}>
         {skill.label}
       </div>
       <div className="skill-node-level">L{skill.level}</div>
+      <Handle type="source" position={Position.Bottom} />
     </div>
   );
 }

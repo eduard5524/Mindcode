@@ -2,6 +2,8 @@
 
 Interactive skill map app. Build skill maps for people and visualize them as a graph.
 
+![Mindcode screenshot](docs/screenshot.png)
+
 ## Features
 
 - **Multiple people** — keep a skill map for each person in one document.
